@@ -12,7 +12,7 @@ function gerarEntrada() {
     const isVermelho = Math.random() < 0.5;
     const corClasse = isVermelho ? 'vermelho' : 'azul';
     const nomeClasse = isVermelho ? 'cor-vermelho' : 'cor-azul';
-    const nomeTexto = isVermelho ? 'VERMELHO' : 'AZUL';
+    const nomeTexto = isVermelho ? 'VERMELHO' : 'PRETO';
     const probabilidade = Math.floor(Math.random() * 31) + 60;
 
     resultadoDiv.innerHTML = `

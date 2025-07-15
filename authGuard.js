@@ -3,13 +3,13 @@ import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/
 
 // Configuração do Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyDZsUJazxUFX_E968XskCB70dCYd8EqP9s",
-  authDomain: "gerador-turbo.firebaseapp.com",
-  projectId: "gerador-turbo",
-  storageBucket: "gerador-turbo.appspot.com",
-  messagingSenderId: "322571240877",
-  appId: "1:322571240877:web:86b4a9387e6172ee9b4d24",
-  measurementId: "G-8NSNPG262P"
+  apiKey: "AIzaSyAy3lnmXY4rt5fRLHvh0emvqqbjKiddckI",
+  authDomain: "gerador-turbo-shot.firebaseapp.com",
+  projectId: "gerador-turbo-shot",
+  storageBucket: "gerador-turbo-shot.firebasestorage.app",
+  messagingSenderId: "961554334939",
+  appId: "1:961554334939:web:8f383bfc4952133f94f8fe",
+  measurementId: "G-2DKCFTCRGG"
 };
 
 // Inicializa Firebase uma única vez
