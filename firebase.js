@@ -7,10 +7,10 @@ const firebaseConfig = {
   apiKey: "AIzaSyDZsUJazxUFX_E968XskCB70dCYd8EqP9s",
   authDomain: "gerador-turbo.firebaseapp.com",
   projectId: "gerador-turbo",
-  storageBucket: "gerador-turbo.appspot.com",
+  storageBucket: "gerador-turbo.firebasestorage.app",
   messagingSenderId: "322571240877",
   appId: "1:322571240877:web:86b4a9387e6172ee9b4d24",
-  measurementId: "G-8NSNPG262P"
+  measurementId: "G-8N5NPG262P"
 };
 
 // Inicializa o Firebase
