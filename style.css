@@ -196,7 +196,7 @@ button:hover:not(:disabled) {
 @media (max-width: 768px) {
   body {
     padding: 10px;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .card {
