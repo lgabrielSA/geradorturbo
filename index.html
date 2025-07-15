@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gerador Turbo ⚡</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body style="visibility: hidden;">
+  <div class="card">
+    <h1>Gerador Turbo ⚡</h1>
+    <div class="logo-inicial" id="resultado">
+      <img alt="Logo Magnata" src="imagens/Logo Magnata.png"/>
+    </div>
+    <button id="btnGerar" onclick="gerarEntrada()">Gerar</button>
+  </div>
+
+  <!-- Seu script de lógica principal -->
+  <script src="script.js"></script>
+
+  <!-- Script de autenticação -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+    import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDZsUJazxUFX_E968XskCB70dCYd8EqP9s",
+      authDomain: "gerador-turbo.firebaseapp.com",
+      projectId: "gerador-turbo",
+      storageBucket: "gerador-turbo.appspot.com",
+      messagingSenderId: "322571240877",
+      appId: "1:322571240877:web:86b4a9387e6172ee9b4d24",
+      measurementId: "G-8NSNPG262P"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+
+    console.log("[Index] Verificando se o usuário está autenticado...");
+
+    onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        console.warn("[Index] Usuário não autenticado. Redirecionando...");
+        window.location.href = "login.html";
+      } else {
+        console.log("[Index] Usuário autenticado:", user.email);
+        document.body.style.visibility = "visible";
+      }
+    });
+  </script>
+</body>
+</html>
